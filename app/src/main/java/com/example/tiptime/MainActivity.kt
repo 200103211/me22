@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     @SuppressLint("StringFormatInvalid")
-    fun calculateTip() {
+    private fun calculateTip() {
         val stringInTextField = binding.costOfService.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
         if (cost == null) {
